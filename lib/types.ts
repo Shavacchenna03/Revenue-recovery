@@ -177,3 +177,33 @@ export interface CombinedGeneratedRecord {
   /** Hidden ground-truth evaluation target */
   hidden: GroundTruthTransaction;
 }
+
+// ============================================================================
+// ENVIRONMENT SIMULATION TYPES
+// ============================================================================
+
+/**
+ * RECOVERY SIMULATION RESULT
+ * 
+ * Outcome returned by the evaluation environment when a RecoveryAction is tested
+ * against an ObservableTransaction and its hidden GroundTruthTransaction.
+ */
+export interface RecoveryResult {
+  /** Transaction ID being simulated */
+  transaction_id: string;
+  
+  /** Recovery intervention action selected */
+  action: RecoveryAction;
+  
+  /** True simulated outcome (true if recovery succeeded, false otherwise) */
+  recovered: boolean;
+  
+  /** The hidden probability of success used during evaluation */
+  probability_used: number;
+  
+  /** Evaluation reward signal (+1 for recovery success, 0 for failure) */
+  reward: number;
+  
+  /** The deterministic action noise seed used for this simulation roll */
+  noise_seed: number;
+}
