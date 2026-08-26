@@ -207,3 +207,29 @@ export interface RecoveryResult {
   /** The deterministic action noise seed used for this simulation roll */
   noise_seed: number;
 }
+
+// ============================================================================
+// LLM AGENT TYPES
+// ============================================================================
+
+export interface LLMRecoveryDecision {
+  diagnosis: string;
+  recommended_action: RecoveryAction;
+  confidence: number; // 0-1
+}
+
+export type LLMFallbackReason = 
+  | 'timeout'
+  | 'network_error'
+  | 'rate_limited'
+  | 'validation_failed'
+  | 'api_error';
+
+export interface LLMPolicyResult {
+  action: RecoveryAction;
+  diagnosis: string;
+  confidence: number;
+  used_fallback: boolean;
+  fallback_reason?: LLMFallbackReason;
+  raw_response?: string;
+}

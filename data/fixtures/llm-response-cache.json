@@ -1,0 +1,1766 @@
+{
+  "txn_001454": {
+    "action": "request_payment_method_update",
+    "diagnosis": "LLM fallback: api_error (Groq API returned HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before generating a valid document\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "api_error"
+  },
+  "txn_003277": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a network timeout on the first attempt, indicating a transient connectivity issue.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"The payment failed due to a network timeout on the first attempt, indicating a transient connectivity issue.\",\"recommended_action\":\"retry_now\",\"confidence\":0.92}"
+  },
+  "txn_002767": {
+    "action": "retry_now",
+    "diagnosis": "Payment failed due to a network timeout during the first attempt, likely a transient connectivity issue.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Payment failed due to a network timeout during the first attempt, likely a transient connectivity issue.\",\"recommended_action\":\"retry_now\",\"confidence\":0.92}"
+  },
+  "txn_004910": {
+    "action": "retry_later",
+    "diagnosis": "Payment failed due to insufficient funds on the card.",
+    "confidence": 0.9,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Payment failed due to insufficient funds on the card.\",\"recommended_action\":\"retry_later\",\"confidence\":0.9}"
+  },
+  "txn_000323": {
+    "action": "retry_now",
+    "diagnosis": "Payment failed due to a transient technical error on the first attempt.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Payment failed due to a transient technical error on the first attempt.\",\"recommended_action\":\"retry_now\",\"confidence\":0.88}"
+  },
+  "txn_002790": {
+    "action": "retry_later",
+    "diagnosis": "Payment failed due to the bank's server being down, causing a transient error.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Payment failed due to the bank's server being down, causing a transient error.\",\"recommended_action\":\"retry_later\",\"confidence\":0.92}"
+  },
+  "txn_001794": {
+    "action": "retry_later",
+    "diagnosis": "Payment failed because the issuing bank's server was down, causing a temporary processing error.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Payment failed because the issuing bank's server was down, causing a temporary processing error.\",\"recommended_action\":\"retry_later\",\"confidence\":0.92}"
+  },
+  "txn_000429": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a network timeout on the first attempt, indicating a transient connectivity issue.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"The payment failed due to a network timeout on the first attempt, indicating a transient connectivity issue.\",\"recommended_action\":\"retry_now\",\"confidence\":0.92}"
+  },
+  "txn_003690": {
+    "action": "retry_now",
+    "diagnosis": "Technical error caused a transient failure on the second UPI attempt.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Technical error caused a transient failure on the second UPI attempt.\",\"recommended_action\":\"retry_now\",\"confidence\":0.92}"
+  },
+  "txn_002120": {
+    "action": "request_payment_method_update",
+    "diagnosis": "LLM fallback: api_error (Groq API returned HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before generating a valid document\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "api_error"
+  },
+  "txn_001646": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The netbanking authentication failed on the first attempt, indicating an issue with the customer's banking credentials or instrument.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"The netbanking authentication failed on the first attempt, indicating an issue with the customer's banking credentials or instrument.\",\"recommended_action\":\"request_payment_method_update\",\"confidence\":0.88}"
+  },
+  "txn_003015": {
+    "action": "escalate",
+    "diagnosis": "LLM fallback: api_error (Groq API returned HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before generating a valid document\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "api_error"
+  },
+  "txn_002578": {
+    "action": "request_payment_method_update",
+    "diagnosis": "Authentication failed on the first attempt, indicating the card could not be authorized (e.g., expired or declined by issuer)",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Authentication failed on the first attempt, indicating the card could not be authorized (e.g., expired or declined by issuer)\",\"recommended_action\":\"request_payment_method_update\",\"confidence\":0.92}"
+  },
+  "txn_002266": {
+    "action": "retry_later",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7666, Requested 648. Please try again in 2.355s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_000528": {
+    "action": "request_payment_method_update",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7593, Requested 648. Please try again in 1.8075s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_004987": {
+    "action": "request_payment_method_update",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7518, Requested 642. Please try again in 1.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_004610": {
+    "action": "request_payment_method_update",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7443, Requested 613. Please try again in 420ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_001745": {
+    "action": "retry_later",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7367, Requested 637. Please try again in 30ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_000484": {
+    "action": "escalate",
+    "diagnosis": "LLM fallback: api_error (Groq API returned HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before generating a valid document\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "api_error"
+  },
+  "txn_003373": {
+    "action": "retry_later",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7647, Requested 648. Please try again in 2.2125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_000832": {
+    "action": "send_reminder",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7567, Requested 648. Please try again in 1.6125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_002846": {
+    "action": "escalate",
+    "diagnosis": "LLM fallback: rate_limited (Groq API returned HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0yevybte25abptgwmxt4znk` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7493, Requested 648. Please try again in 1.057499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n)",
+    "confidence": 0,
+    "used_fallback": true,
+    "fallback_reason": "rate_limited"
+  },
+  "txn_001142": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an authentication error on the 4th attempt, indicating a persistent issue with the UPI instrument or user verification rather than a transient network glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the 4th attempt, indicating a persistent issue with the UPI instrument or user verification rather than a transient network glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003673": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for long-tenured customers with a high historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for long-tenured customers with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000058": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or instrument problem.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or instrument problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001595": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000824": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_001736": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003218": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, which for a long-tenured customer with a high success rate typically indicates a transient UPI app session issue or temporary bank verification glitch rather than a permanent instrument failure.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, which for a long-tenured customer with a high success rate typically indicates a transient UPI app session issue or temporary bank verification glitch rather than a permanent instrument failure.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004556": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or credentials rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or credentials rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002469": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument associated with the transaction has expired or is invalid, requiring the customer to provide a new payment method.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument associated with the transaction has expired or is invalid, requiring the customer to provide a new payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001101": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term loyal customer with a perfect historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term loyal customer with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002396": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or temporary bank server unavailability rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or temporary bank server unavailability rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004035": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the netbanking credentials or session validity that requires customer intervention to resolve.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the netbanking credentials or session validity that requires customer intervention to resolve.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001879": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3DS security rather than a transient network glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3DS security rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001071": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, which for a long-term customer with a perfect history typically indicates a temporary 3D Secure verification issue or bank-side auth glitch rather than a permanent card invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, which for a long-term customer with a perfect history typically indicates a temporary 3D Secure verification issue or bank-side auth glitch rather than a permanent card invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002710": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001192": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is due to a transient technical error on the second attempt, likely a temporary network or server glitch given the customer's perfect historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a transient technical error on the second attempt, likely a temporary network or server glitch given the customer's perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002430": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to authentication failure on the third attempt, indicating a persistent issue with the UPI instrument or user verification process rather than a transient glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to authentication failure on the third attempt, indicating a persistent issue with the UPI instrument or user verification process rather than a transient glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002688": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value transaction on a long-tenured, reliable account.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value transaction on a long-tenured, reliable account.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_004835": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004407": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch for UPI transactions on mobile devices.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch for UPI transactions on mobile devices.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000667": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001513": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a high historical success rate, indicating a need for a delayed retry to allow for account replenishment rather than immediate escalation.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a high historical success rate, indicating a need for a delayed retry to allow for account replenishment rather than immediate escalation.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004411": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an authentication error on the third attempt for a long-term customer with a perfect historical success rate, indicating a persistent technical or credential issue rather than a transient glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the third attempt for a long-term customer with a perfect historical success rate, indicating a persistent technical or credential issue rather than a transient glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001938": {
+    "action": "escalate",
+    "diagnosis": "The payment failure is due to a network timeout on a canceled subscription, indicating the customer has likely churned and further automated retries are inappropriate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a network timeout on a canceled subscription, indicating the customer has likely churned and further automated retries are inappropriate.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003959": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001196": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI-linked instrument or associated card has expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI-linked instrument or associated card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_002854": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_003254": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a fundamental instrument or account problem.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a fundamental instrument or account problem.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004086": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's bank account, which is a non-transient issue that requires customer intervention to resolve.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's bank account, which is a non-transient issue that requires customer intervention to resolve.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001174": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card associated with the transaction has expired.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card associated with the transaction has expired.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000676": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or user verification failure rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or user verification failure rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001311": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt for a high-value, long-tenure customer with a strong payment history.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt for a high-value, long-tenure customer with a strong payment history.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003121": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account during the second retry attempt.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account during the second retry attempt.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003133": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value transaction on a long-tenured, reliable account.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value transaction on a long-tenured, reliable account.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001618": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card has expired, requiring the customer to provide a valid payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card has expired, requiring the customer to provide a valid payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_003510": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, which is a common temporary glitch rather than a persistent issue with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, which is a common temporary glitch rather than a persistent issue with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004297": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt for a customer with a perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt for a customer with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002538": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or bank server glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or bank server glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003057": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a temporary session or token issue rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a temporary session or token issue rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000520": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account during the second retry attempt.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account during the second retry attempt.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003609": {
+    "action": "retry_later",
+    "diagnosis": "The payment failure is due to a transient technical error on the second attempt for a high-value, long-tenured customer with a strong payment history.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a transient technical error on the second attempt for a high-value, long-tenured customer with a strong payment history.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_003854": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a card validity problem.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a card validity problem.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003296": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the second attempt, indicating a temporary connectivity issue rather than a fundamental card or account problem.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the second attempt, indicating a temporary connectivity issue rather than a fundamental card or account problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002254": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout during the second attempt, which is likely to resolve with an immediate retry given the customer's perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout during the second attempt, which is likely to resolve with an immediate retry given the customer's perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000003": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the second attempt, which is a common temporary glitch for UPI transactions on mobile devices.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the second attempt, which is a common temporary glitch for UPI transactions on mobile devices.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003790": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a card or account problem.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a card or account problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002629": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_001905": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for long-tenured customers with high historical success rates.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for long-tenured customers with high historical success rates.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003754": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring an update to the billing instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring an update to the billing instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000814": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000887": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, which is common with UPI on mobile devices and likely resolvable with an immediate retry.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, which is common with UPI on mobile devices and likely resolvable with an immediate retry.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003415": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a card validity problem.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a card validity problem.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_002719": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001534": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient bank server outage, but the subscription is already canceled, indicating the customer has likely churned or the account is inactive, making further automated retries or reminders inappropriate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, but the subscription is already canceled, indicating the customer has likely churned or the account is inactive, making further automated retries or reminders inappropriate.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000578": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI instrument or user verification rather than a transient glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI instrument or user verification rather than a transient glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001317": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient network timeout on the third attempt, indicating a temporary connectivity issue rather than a fundamental billing or card validity problem.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the third attempt, indicating a temporary connectivity issue rather than a fundamental billing or card validity problem.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_004150": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a non-transient issue requiring customer intervention to resolve.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a non-transient issue requiring customer intervention to resolve.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002135": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt on a mobile device, indicating a temporary connectivity issue rather than a fundamental billing problem.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt on a mobile device, indicating a temporary connectivity issue rather than a fundamental billing problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004463": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_004335": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account, a non-transient issue requiring customer intervention to replenish funds or update payment details.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account, a non-transient issue requiring customer intervention to replenish funds or update payment details.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000423": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient technical error on the second attempt, likely a temporary network or server glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the second attempt, likely a temporary network or server glitch.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002695": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's wallet on the fourth attempt, indicating a persistent issue that requires customer intervention to top up or switch payment methods.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's wallet on the fourth attempt, indicating a persistent issue that requires customer intervention to top up or switch payment methods.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003606": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003896": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_002799": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a high-value transaction relative to the customer's average spend.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a high-value transaction relative to the customer's average spend.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_004954": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the wallet instrument, which typically indicates a need for re-verification or an invalid session rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the wallet instrument, which typically indicates a need for re-verification or an invalid session rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002787": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers where the balance may have been depleted by other transactions.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers where the balance may have been depleted by other transactions.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001313": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a long-term loyal customer with a high historical success rate.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a long-term loyal customer with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_000344": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's bank account, which is a temporary state likely to resolve as the customer has a high historical success rate and active subscription.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's bank account, which is a temporary state likely to resolve as the customer has a high historical success rate and active subscription.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001084": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient issue or bank-side instability rather than a fundamental instrument error.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient issue or bank-side instability rather than a fundamental instrument error.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_002462": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout during the initial attempt, likely due to temporary connectivity issues on the mobile web device.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout during the initial attempt, likely due to temporary connectivity issues on the mobile web device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001607": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with card credentials or 3D Secure verification rather than a transient network glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with card credentials or 3D Secure verification rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002883": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term subscribers with high historical success rates.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term subscribers with high historical success rates.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_002010": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout during the first attempt for a high-value customer with a strong payment history.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout during the first attempt for a high-value customer with a strong payment history.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004738": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002711": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account, which is a non-transient issue requiring customer intervention to replenish funds or update payment details.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account, which is a non-transient issue requiring customer intervention to replenish funds or update payment details.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003580": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the netbanking credentials or session validity that requires customer intervention to resolve.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the netbanking credentials or session validity that requires customer intervention to resolve.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003628": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value loyal customer on their first retry attempt.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a high-value loyal customer on their first retry attempt.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003417": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or card problem.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or card problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002243": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient bank server outage, but the subscription is already canceled, indicating the customer has intentionally terminated the service.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, but the subscription is already canceled, indicating the customer has intentionally terminated the service.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004243": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000716": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the second attempt, indicating a temporary connectivity issue rather than a persistent account or instrument problem.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the second attempt, indicating a temporary connectivity issue rather than a persistent account or instrument problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001479": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a temporary session timeout or user interaction issue on the mobile device rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a temporary session timeout or user interaction issue on the mobile device rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001679": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt for a customer with a perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt for a customer with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004343": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt for a high-value transaction from a long-term, reliable customer.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt for a high-value transaction from a long-term, reliable customer.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004113": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has likely voluntarily terminated the service.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has likely voluntarily terminated the service.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001815": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, which typically indicates an issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, which typically indicates an issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002506": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a non-transient issue requiring customer intervention to resolve.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a non-transient issue requiring customer intervention to resolve.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001847": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for long-term customers with a moderate historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for long-term customers with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003264": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to insufficient funds, but the subscription is already canceled, indicating the customer has likely intentionally stopped the service or the account is no longer active for billing.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds, but the subscription is already canceled, indicating the customer has likely intentionally stopped the service or the account is no longer active for billing.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002095": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI instrument or user verification rather than a transient network glitch.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI instrument or user verification rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_002419": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_002524": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003421": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, and as this is the second attempt for a past-due subscription, a customer-facing reminder is required to prompt manual intervention.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, and as this is the second attempt for a past-due subscription, a customer-facing reminder is required to prompt manual intervention.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002201": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a high historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003235": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay rather than a fundamental instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay rather than a fundamental instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001362": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch rather than a persistent issue given the customer's perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch rather than a persistent issue given the customer's perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000941": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the second attempt for a long-tenured customer whose subscription is already past due, indicating a need for customer engagement rather than immediate technical retry.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the second attempt for a long-tenured customer whose subscription is already past due, indicating a need for customer engagement rather than immediate technical retry.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001055": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with card verification or 3DS security rather than a transient network glitch.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with card verification or 3DS security rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_003098": {
+    "action": "escalate",
+    "diagnosis": "The payment failure is a technical error on a canceled subscription, indicating the account is no longer active for billing.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is a technical error on a canceled subscription, indicating the account is no longer active for billing.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003799": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's bank account during the initial attempt.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's bank account during the initial attempt.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001546": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a customer error or invalid instrument.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a customer error or invalid instrument.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003709": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for a high-value transaction on a long-tenured, reliable customer.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's netbanking account, which is a common transient issue for a high-value transaction on a long-tenured, reliable customer.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000284": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003457": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3D Secure verification issue or bank-side authentication glitch rather than a permanent card invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3D Secure verification issue or bank-side authentication glitch rather than a permanent card invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003595": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient network timeout, but the subscription status is canceled, indicating the customer has intentionally terminated the service.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout, but the subscription status is canceled, indicating the customer has intentionally terminated the service.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001026": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to a transient bank server outage, but the subscription is already past due and this is the fourth failed attempt, indicating the need for customer engagement rather than further automated retries.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, but the subscription is already past due and this is the fourth failed attempt, indicating the need for customer engagement rather than further automated retries.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002268": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt for a long-standing customer with a perfect historical success rate, suggesting a potential issue with card verification or tokenization rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt for a long-standing customer with a perfect historical success rate, suggesting a potential issue with card verification or tokenization rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004244": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a past_due status, indicating a need for customer intervention rather than automated retries.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a past_due status, indicating a need for customer intervention rather than automated retries.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_004787": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a moderate historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004231": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers with moderate historical success rates, suggesting a temporary liquidity gap rather than a technical error or invalid instrument.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers with moderate historical success rates, suggesting a temporary liquidity gap rather than a technical error or invalid instrument.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003866": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001721": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004400": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003830": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or temporary bank server unavailability rather than a permanent instrument defect.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or temporary bank server unavailability rather than a permanent instrument defect.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004691": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the fourth attempt for a long-tenured customer with a high historical success rate, indicating a need to prompt customer action rather than further automated retries.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the fourth attempt for a long-tenured customer with a high historical success rate, indicating a need to prompt customer action rather than further automated retries.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000368": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for early attempts that may resolve if the customer adds funds before the next billing cycle.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for early attempts that may resolve if the customer adds funds before the next billing cycle.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004711": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_003053": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked bank account details have expired or become invalid, requiring the customer to update their payment method.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked bank account details have expired or become invalid, requiring the customer to update their payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003352": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient technical error on the second attempt, indicating a temporary system or network issue rather than a fundamental problem with the payment instrument.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the second attempt, indicating a temporary system or network issue rather than a fundamental problem with the payment instrument.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000385": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term loyal customer with a high historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term loyal customer with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003718": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a technical error on the third attempt for a long-tenured customer with a high historical success rate, indicating a persistent transient issue rather than a fundamental payment method defect.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a technical error on the third attempt for a long-tenured customer with a high historical success rate, indicating a persistent transient issue rather than a fundamental payment method defect.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004717": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000089": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3DS challenge issue or bank-side verification glitch rather than a permanent card invalidity, given the customer's perfect historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3DS challenge issue or bank-side verification glitch rather than a permanent card invalidity, given the customer's perfect historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000054": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure on the desktop web interface.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure on the desktop web interface.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002154": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI credential or bank server validation rather than a transient glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI credential or bank server validation rather than a transient glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003382": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with a high historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000137": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or user interaction failure rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or user interaction failure rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000018": {
+    "action": "escalate",
+    "diagnosis": "The payment failure is due to a network timeout on a subscription that has already been canceled, indicating the transaction is no longer valid for standard recovery.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a network timeout on a subscription that has already been canceled, indicating the transaction is no longer valid for standard recovery.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002363": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring an update to the billing instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring an update to the billing instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000170": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to insufficient funds on the third attempt, indicating a persistent inability to pay rather than a transient technical issue.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the third attempt, indicating a persistent inability to pay rather than a transient technical issue.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002249": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002487": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004242": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument associated with the transaction has expired or is no longer valid.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument associated with the transaction has expired or is no longer valid.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000163": {
+    "action": "retry_later",
+    "diagnosis": "The payment failure is caused by a transient network timeout on the second attempt for a long-tenured customer with a high historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout on the second attempt for a long-tenured customer with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004612": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the third attempt, indicating a persistent balance issue rather than a transient technical glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the third attempt, indicating a persistent balance issue rather than a transient technical glitch.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002533": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's wallet, which is a balance issue rather than a transient technical glitch or invalid instrument.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's wallet, which is a balance issue rather than a transient technical glitch or invalid instrument.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000878": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a fundamental instrument or account problem.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the third attempt, indicating a persistent transient technical issue rather than a fundamental instrument or account problem.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_004264": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has likely opted out or the service was terminated, making automated retries inappropriate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has likely opted out or the service was terminated, making automated retries inappropriate.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000384": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue unrelated to the customer's account status or payment method validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue unrelated to the customer's account status or payment method validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000557": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient technical error on the second attempt, likely a temporary network or system glitch rather than a persistent card issue.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the second attempt, likely a temporary network or system glitch rather than a persistent card issue.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004595": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's netbanking credentials or linked card have expired, requiring an update to the payment instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's netbanking credentials or linked card have expired, requiring an update to the payment instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000305": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002168": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout on the first attempt for a high-value customer with a perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout on the first attempt for a high-value customer with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001808": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3D Secure verification issue or bank-side authentication glitch rather than a permanent card invalidity, given the customer's perfect historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary 3D Secure verification issue or bank-side authentication glitch rather than a permanent card invalidity, given the customer's perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003683": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is due to a transient technical error on the first attempt, likely a temporary network or system glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a transient technical error on the first attempt, likely a temporary network or system glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002488": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a high historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-term customer with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000871": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI instrument or user verification process rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI instrument or user verification process rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001384": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card associated with the transaction has expired, requiring the customer to provide a valid payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card associated with the transaction has expired, requiring the customer to provide a valid payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_002215": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_004467": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a temporary session issue or user input error during the netbanking login process.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a temporary session issue or user input error during the netbanking login process.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003809": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002449": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or incorrect credentials rather than a permanent instrument failure.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely indicating a temporary UPI app session issue or incorrect credentials rather than a permanent instrument failure.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000830": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a temporary UPI app session timeout or user interaction issue on the desktop web interface.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a temporary UPI app session timeout or user interaction issue on the desktop web interface.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002871": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card has expired, requiring the customer to provide a valid payment method.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card has expired, requiring the customer to provide a valid payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004401": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's netbanking credentials or associated card have expired, requiring an update to the payment instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's netbanking credentials or associated card have expired, requiring an update to the payment instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_003531": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the card's validity or 3DS verification rather than a transient network glitch.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the card's validity or 3DS verification rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_003111": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary unavailability of the customer's bank server, which is a transient technical issue.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002482": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring an update to the billing instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring an update to the billing instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000993": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt for a long-term active subscriber using UPI.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt for a long-term active subscriber using UPI.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003630": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's UPI instrument or linked card has expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_002926": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003550": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-tenured customer with a high historical success rate, suggesting a temporary liquidity gap rather than a permanent inability to pay.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for a long-tenured customer with a high historical success rate, suggesting a temporary liquidity gap rather than a permanent inability to pay.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_004974": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has opted out and does not require automated recovery attempts.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout, but the subscription is already canceled, indicating the customer has opted out and does not require automated recovery attempts.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001867": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the UPI instrument or linked card has expired, requiring the customer to update their payment details.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000825": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI credentials or device security rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the UPI credentials or device security rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004397": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002144": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003903": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient technical outage on the bank's server side, which is unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical outage on the bank's server side, which is unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004833": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, which is often a transient issue with UPI app verification or network handshake on mobile devices.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, which is often a transient issue with UPI app verification or network handshake on mobile devices.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001658": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001289": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or credentials rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or credentials rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000944": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a persistent issue.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002610": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-tenured customers with a moderate historical success rate.",
+    "confidence": 0.88,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-tenured customers with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.88\n}"
+  },
+  "txn_004645": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with high historical success rates.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with high historical success rates.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001414": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004962": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or card validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or card validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003475": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue on the first attempt that may resolve as the customer tops up their account.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue on the first attempt that may resolve as the customer tops up their account.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004793": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch for UPI transactions on mobile devices.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch for UPI transactions on mobile devices.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001212": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's wallet on the first attempt, which is a common transient issue for long-tenured customers with a moderate historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's wallet on the first attempt, which is a common transient issue for long-tenured customers with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000249": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an expired card, but the subscription is already canceled, indicating the customer has likely churned or the account is inactive.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an expired card, but the subscription is already canceled, indicating the customer has likely churned or the account is inactive.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004841": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure on the mobile device.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction failure on the mobile device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000903": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a temporary UPI app session issue or user interaction delay rather than a permanent instrument invalidity.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a temporary UPI app session issue or user interaction delay rather than a permanent instrument invalidity.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002227": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002300": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session timeout or user interaction issue on the mobile web device.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session timeout or user interaction issue on the mobile web device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003477": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error during the first attempt, likely a temporary network or bank server glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error during the first attempt, likely a temporary network or bank server glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003408": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_000270": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to customer intent or instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003141": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001260": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, indicating a potential issue with card verification or 3D Secure rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004361": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's bank account, which is a common transient issue for a long-term loyal customer on their first retry attempt.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's bank account, which is a common transient issue for a long-term loyal customer on their first retry attempt.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002421": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch given the customer's high historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch given the customer's high historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000467": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a high-value transaction from a historically reliable customer.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a high-value transaction from a historically reliable customer.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000908": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with card verification or 3D Secure that requires customer intervention to resolve.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with card verification or 3D Secure that requires customer intervention to resolve.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_000536": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's netbanking credentials or associated card instrument have expired, requiring an update to the payment method.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's netbanking credentials or associated card instrument have expired, requiring an update to the payment method.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000801": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with a high historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term customers with a high historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_002726": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, indicating a temporary connectivity issue rather than a fundamental problem with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, indicating a temporary connectivity issue rather than a fundamental problem with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002884": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a temporary technical glitch rather than a card or account issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a temporary technical glitch rather than a card or account issue.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002911": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to insufficient funds on a subscription that has already been canceled, indicating the customer has likely intentionally stopped service.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on a subscription that has already been canceled, indicating the customer has likely intentionally stopped service.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003929": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000460": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card during the first attempt, which is often a transient state that may resolve with a delayed retry.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card during the first attempt, which is often a transient state that may resolve with a delayed retry.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001880": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001504": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument or customer intent.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000591": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed due to an authentication error on the second attempt, indicating a potential issue with the card's validity or 3DS verification rather than a transient network glitch.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the second attempt, indicating a potential issue with the card's validity or 3DS verification rather than a transient network glitch.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_002029": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is due to a transient technical error on the first attempt for a long-standing customer with a perfect historical success rate.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is due to a transient technical error on the first attempt for a long-standing customer with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001712": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common transient issue for long-term customers with high historical success rates.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common transient issue for long-term customers with high historical success rates.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001498": {
+    "action": "retry_later",
+    "diagnosis": "The payment failure is caused by a transient network timeout on the second attempt for a high-value UPI transaction on a mobile device.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout on the second attempt for a high-value UPI transaction on a mobile device.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001746": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers with a moderate historical success rate, suggesting a temporary liquidity issue rather than a technical glitch or invalid instrument.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card, which is a common issue for long-tenured customers with a moderate historical success rate, suggesting a temporary liquidity issue rather than a technical glitch or invalid instrument.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003223": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or server glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004267": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000764": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout on the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002623": {
+    "action": "send_reminder",
+    "diagnosis": "The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a past_due status, indicating a need for customer intervention rather than automated retries.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the third attempt for a long-tenured customer with a past_due status, indicating a need for customer intervention rather than automated retries.\",\n  \"recommended_action\": \"send_reminder\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003548": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds on the customer's card during the first attempt, which is a common transient issue for long-tenured customers with a moderate historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds on the customer's card during the first attempt, which is a common transient issue for long-tenured customers with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_004372": {
+    "action": "retry_now",
+    "diagnosis": "The payment failure is caused by a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failure is caused by a transient network timeout during the first attempt, which is a common temporary technical glitch rather than a fundamental issue with the payment instrument.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000860": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a long-tenured customer with a moderate historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for a long-tenured customer with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_001241": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or card problem.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental billing or card problem.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_003785": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring an update to the payment instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring an update to the payment instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_001014": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_004795": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-tenured customers with a moderate historical success rate.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-tenured customers with a moderate historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003461": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to customer intent or payment instrument validity.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient bank server outage, which is a temporary technical issue unrelated to customer intent or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001262": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the first attempt, likely caused by a transient UPI app session issue or user interaction delay on the mobile device.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_003710": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term loyal customers with a perfect historical success rate.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to insufficient funds in the customer's UPI account, which is a common transient issue for long-term loyal customers with a perfect historical success rate.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_001488": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental problem with the payment instrument.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, indicating a temporary connectivity issue rather than a fundamental problem with the payment instrument.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_001807": {
+    "action": "escalate",
+    "diagnosis": "The payment has failed three times due to technical errors, indicating a persistent issue that requires escalation beyond standard retries.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment has failed three times due to technical errors, indicating a persistent issue that requires escalation beyond standard retries.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000055": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient technical error on the first attempt, likely a temporary network or system glitch.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003650": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI credentials or instrument rather than a transient network glitch.",
+    "confidence": 0.92,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to an authentication error on the third attempt, indicating a persistent issue with the UPI credentials or instrument rather than a transient network glitch.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.92\n}"
+  },
+  "txn_003891": {
+    "action": "retry_later",
+    "diagnosis": "The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a temporary bank server outage, which is a transient technical issue unrelated to the customer's account status or payment instrument validity.\",\n  \"recommended_action\": \"retry_later\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_002387": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring a new valid payment instrument.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring a new valid payment instrument.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_cache_test_1787746466544": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_cache_test_1787746503919": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  }
+}
