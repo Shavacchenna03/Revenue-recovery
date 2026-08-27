@@ -1,6 +1,32 @@
-import { ObservableTransaction, RecoveryDecisionResult, RecoveryOrchestrationResult } from './types.js';
+import { ObservableTransaction, RecoveryDecisionResult, RecoveryOrchestrationResult, RecoveryExecutor } from './types.js';
 import { explainGovernedLLMDecisionAsync } from './governed-policy.js';
 import { SelectLLMActionOptions } from './llm-policy.js';
+import { RazorpayAdapterOptions } from './razorpay-adapter.js';
+import { SimulatorRecoveryExecutor, RazorpayRecoveryExecutor } from './recovery-executor.js';
+
+export interface RunRecoveryOptions extends SelectLLMActionOptions {
+  executor?: RecoveryExecutor;
+  executionMode?: 'simulator' | 'razorpay';
+  razorpayOptions?: RazorpayAdapterOptions;
+}
+
+/**
+ * Resolves the appropriate RecoveryExecutor based on explicit opt-in arguments.
+ * 
+ * ⚠️ SAFETY RULE ⚠️
+ * Defaults strictly to SimulatorRecoveryExecutor.
+ * Razorpay executor is ONLY selected if executionMode === 'razorpay' OR an explicit executor instance is passed.
+ * Mere presence of RAZORPAY_KEY_ID in environment is NEVER sufficient to trigger real API calls.
+ */
+export function resolveExecutor(options?: RunRecoveryOptions): RecoveryExecutor {
+  if (options?.executor) {
+    return options.executor;
+  }
+  if (options?.executionMode === 'razorpay') {
+    return new RazorpayRecoveryExecutor(options?.razorpayOptions);
+  }
+  return new SimulatorRecoveryExecutor();
+}
 
 /**
  * PRODUCTION-SHAPE RECOVERY DECISION PIPELINE (Module 1)
@@ -18,7 +44,7 @@ import { SelectLLMActionOptions } from './llm-policy.js';
  */
 export async function runRecoveryDecision(
   transaction: ObservableTransaction,
-  options?: SelectLLMActionOptions
+  options?: RunRecoveryOptions
 ): Promise<RecoveryDecisionResult> {
   const governedDecision = await explainGovernedLLMDecisionAsync(transaction, options);
 

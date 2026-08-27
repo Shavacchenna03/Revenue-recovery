@@ -1804,5 +1804,19 @@
     "confidence": 0.75,
     "used_fallback": false,
     "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_cache_test_1787837727914": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_cache_test_1787839569731": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
   }
 }

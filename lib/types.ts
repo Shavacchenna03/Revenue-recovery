@@ -299,4 +299,28 @@ export interface RecoveryOrchestrationResult {
   probability_used: number; // EVALUATION-ONLY FIELD derived from hidden ground truth
 }
 
+// ============================================================================
+// PAYMENT PROVIDER / EXECUTOR TYPES (Day 6)
+// ============================================================================
+
+export interface ExecutionResult {
+  success: boolean;
+  provider: 'simulator' | 'razorpay';
+  action: RecoveryAction;
+  provider_reference_id?: string;
+  status_message: string;
+  details?: Record<string, any>;
+  unsupported_action?: boolean;
+}
+
+export interface RecoveryExecutor {
+  readonly providerName: 'simulator' | 'razorpay';
+  execute(
+    transaction: ObservableTransaction,
+    action: RecoveryAction,
+    hidden?: GroundTruthTransaction
+  ): Promise<ExecutionResult>;
+}
+
+
 

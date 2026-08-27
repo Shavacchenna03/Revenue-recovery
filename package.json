@@ -11,6 +11,7 @@
     "evaluate:llm": "tsx scripts/evaluate-llm-agent.ts",
     "evaluate:governed": "tsx scripts/evaluate-governed-policy.ts",
     "demo": "tsx scripts/demo-recovery.ts",
+    "demo:razorpay": "tsx scripts/demo-razorpay.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
