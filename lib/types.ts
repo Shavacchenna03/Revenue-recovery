@@ -261,3 +261,42 @@ export interface GovernedLLMDecision {
   raw_response?: string;
 }
 
+// ============================================================================
+// RECOVERY ORCHESTRATOR TYPES
+// ============================================================================
+
+/**
+ * Production-shape decision output from Module 1 (lib/recovery-orchestrator.ts).
+ * Contains proposed action, policy engine guardrail outcome, final governed action,
+ * and LLM reasoning/confidence.
+ * 
+ * ⚠️ CONTAINS ZERO HIDDEN GROUND TRUTH & ZERO SIMULATION DATA ⚠️
+ */
+export interface RecoveryDecisionResult {
+  transaction_id: string;
+  proposed_action: RecoveryAction;
+  final_action: RecoveryAction;
+  overridden: boolean;
+  guardrail_id: string;
+  guardrail_reason: string;
+  llm_diagnosis?: string;
+  llm_confidence?: number;
+  used_llm_fallback: boolean;
+  llm_fallback_reason?: string;
+}
+
+/**
+ * Evaluation/demo-only outcome output from Module 2 (lib/recovery-orchestrator-simulated.ts).
+ * Wraps the Module 1 RecoveryDecisionResult with simulated environment outcome data.
+ * 
+ * 🛑 DEMO / EVALUATION-ONLY TYPE 🛑
+ */
+export interface RecoveryOrchestrationResult {
+  decision: RecoveryDecisionResult;
+  recovered: boolean;
+  revenue_recovered: number;
+  reward: number;
+  probability_used: number; // EVALUATION-ONLY FIELD derived from hidden ground truth
+}
+
+

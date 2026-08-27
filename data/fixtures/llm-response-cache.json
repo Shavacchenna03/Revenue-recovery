@@ -1769,5 +1769,40 @@
     "confidence": 0.75,
     "used_fallback": false,
     "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_cache_test_1787823098513": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_000006": {
+    "action": "retry_now",
+    "diagnosis": "The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch rather than a persistent issue.",
+    "confidence": 0.95,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a transient network timeout on the first attempt, which is a common temporary glitch rather than a persistent issue.\",\n  \"recommended_action\": \"retry_now\",\n  \"confidence\": 0.95\n}"
+  },
+  "txn_000030": {
+    "action": "request_payment_method_update",
+    "diagnosis": "The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.",
+    "confidence": 0.98,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed because the customer's card has expired, requiring a new payment instrument to be provided.\",\n  \"recommended_action\": \"request_payment_method_update\",\n  \"confidence\": 0.98\n}"
+  },
+  "txn_000026": {
+    "action": "escalate",
+    "diagnosis": "The payment failed due to a network timeout on the fourth attempt, indicating a persistent transient issue that has not resolved despite previous retries.",
+    "confidence": 0.85,
+    "used_fallback": false,
+    "raw_response": "{\n  \"diagnosis\": \"The payment failed due to a network timeout on the fourth attempt, indicating a persistent transient issue that has not resolved despite previous retries.\",\n  \"recommended_action\": \"escalate\",\n  \"confidence\": 0.85\n}"
+  },
+  "txn_cache_test_1787823871584": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
   }
 }
