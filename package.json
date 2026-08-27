@@ -9,6 +9,7 @@
     "evaluate:baseline": "tsx scripts/evaluate-baseline.ts",
     "evaluate:all": "tsx scripts/evaluate-all-policies.ts",
     "evaluate:llm": "tsx scripts/evaluate-llm-agent.ts",
+    "evaluate:governed": "tsx scripts/evaluate-governed-policy.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

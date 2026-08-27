@@ -99,8 +99,16 @@ function assertFailedTransaction(transaction: ObservableTransaction): void {
  * LLM-BACKED RECOVERY POLICY ENGINE WITH HYBRID FALLBACK
  * 
  * ⚠️ AGENT-SAFE COMPONENT ⚠️
- * Queries the Groq API (Llama-3.3-70B) with observable transaction context.
- * Features automated retry-with-backoff, local response caching, 10s timeout,
+ */
+export interface SelectLLMActionOptions {
+  noCache?: boolean;
+  clientOverride?: typeof callLLMForRecovery;
+}
+
+/**
+ * Async policy function that selects a RecoveryAction for a given ObservableTransaction.
+ * 
+ * Includes automated retry-with-backoff, local response caching, 10s timeout,
  * and seamless fallback to the Day 2.2 rule-based policy upon API/validation failure.
  * 
  * @param transaction Public ObservableTransaction
@@ -109,10 +117,7 @@ function assertFailedTransaction(transaction: ObservableTransaction): void {
  */
 export async function selectLLMActionAsync(
   transaction: ObservableTransaction,
-  options?: { 
-    noCache?: boolean;
-    clientOverride?: typeof callLLMForRecovery;
-  }
+  options?: SelectLLMActionOptions
 ): Promise<LLMPolicyResult> {
   assertFailedTransaction(transaction);
 

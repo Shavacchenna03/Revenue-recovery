@@ -233,3 +233,31 @@ export interface LLMPolicyResult {
   fallback_reason?: LLMFallbackReason;
   raw_response?: string;
 }
+
+// ============================================================================
+// POLICY ENGINE / GOVERNANCE TYPES
+// ============================================================================
+
+export interface PolicyEngineDecision {
+  transaction_id: string;
+  proposed_action: RecoveryAction;
+  approved_action: RecoveryAction;
+  overridden: boolean;
+  guardrail_id: string;
+  reason: string;
+}
+
+export interface GovernedLLMDecision {
+  transaction_id: string;
+  proposed_action: RecoveryAction;
+  approved_action: RecoveryAction;
+  overridden: boolean;
+  guardrail_id: string;
+  reason: string;
+  diagnosis: string;
+  confidence: number;
+  used_fallback: boolean;
+  fallback_reason?: LLMFallbackReason;
+  raw_response?: string;
+}
+

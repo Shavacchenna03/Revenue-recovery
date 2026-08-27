@@ -1762,5 +1762,12 @@
     "confidence": 0.75,
     "used_fallback": false,
     "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
+  },
+  "txn_cache_test_1787820722574": {
+    "action": "send_reminder",
+    "diagnosis": "Cached test decision.",
+    "confidence": 0.75,
+    "used_fallback": false,
+    "raw_response": "{\"diagnosis\":\"Cached test decision.\",\"recommended_action\":\"send_reminder\",\"confidence\":0.75}"
   }
 }
