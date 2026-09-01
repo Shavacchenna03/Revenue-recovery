@@ -52,9 +52,10 @@ export class RazorpayExecutionAdapter {
     // 1. Credentials Guard
     if (!this.keyId || !this.keySecret) {
       return {
-        success: false,
         provider: 'razorpay',
         action,
+        attempted: false,
+        success: false,
         status_message: 'Razorpay execution error: Missing credentials (RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET).',
         details: { error_type: 'MISSING_CREDENTIALS' },
       };
@@ -74,9 +75,10 @@ export class RazorpayExecutionAdapter {
           return this.handleEscalate(transaction);
         default:
           return {
-            success: false,
             provider: 'razorpay',
             action,
+            attempted: false,
+            success: false,
             unsupported_action: true,
             status_message: `Unsupported RecoveryAction '${action}' by Razorpay adapter.`,
           };
@@ -86,9 +88,10 @@ export class RazorpayExecutionAdapter {
       const safeMessage = sanitizeSecrets(rawMessage, this.keySecret, this.keyId);
 
       return {
-        success: false,
         provider: 'razorpay',
         action,
+        attempted: true,
+        success: false,
         status_message: `Razorpay API execution failure: ${safeMessage}`,
         details: { error_type: err?.name ?? 'API_ERROR' },
       };
@@ -101,7 +104,6 @@ export class RazorpayExecutionAdapter {
    * Official Doc: Razorpay Payment Links API (Creates a payment link and sends immediate SMS/Email notification)
    */
   private async handleRetryNow(transaction: ObservableTransaction): Promise<ExecutionResult> {
-    // POST /v1/payment_links
     const payload = {
       amount: Math.round(transaction.amount * 100), // convert to paise
       currency: transaction.currency,
@@ -125,9 +127,10 @@ export class RazorpayExecutionAdapter {
 
     const resData = await this.makeApiCall('POST', '/payment_links', payload);
     return {
-      success: true,
       provider: 'razorpay',
       action: 'retry_now',
+      attempted: true,
+      success: true,
       provider_reference_id: resData.id ?? `plink_mock_${transaction.transaction_id}`,
       status_message: `Created Razorpay Payment Link ${resData.id ?? ''} with immediate notification for retry_now.`,
       details: {
@@ -166,9 +169,10 @@ export class RazorpayExecutionAdapter {
 
     const resData = await this.makeApiCall('POST', '/payment_links', payload);
     return {
-      success: true,
       provider: 'razorpay',
       action: 'retry_later',
+      attempted: true,
+      success: true,
       provider_reference_id: resData.id ?? `plink_mock_${transaction.transaction_id}`,
       status_message: `Created Razorpay Payment Link ${resData.id ?? ''} for application-level scheduled delivery.`,
       details: {
@@ -207,9 +211,10 @@ export class RazorpayExecutionAdapter {
 
     const resData = await this.makeApiCall('POST', '/payment_links', payload);
     return {
-      success: true,
       provider: 'razorpay',
       action: 'send_reminder',
+      attempted: true,
+      success: true,
       provider_reference_id: resData.id ?? `plink_mock_${transaction.transaction_id}`,
       status_message: `Sent Razorpay Payment Link reminder ${resData.id ?? ''} to customer.`,
       details: {
@@ -247,9 +252,10 @@ export class RazorpayExecutionAdapter {
 
     const resData = await this.makeApiCall('POST', '/payment_links', payload);
     return {
-      success: true,
       provider: 'razorpay',
       action: 'request_payment_method_update',
+      attempted: true,
+      success: true,
       provider_reference_id: resData.id ?? `plink_mock_${transaction.transaction_id}`,
       status_message: `Created Razorpay Payment Link ${resData.id ?? ''} allowing customer to select a new payment method.`,
       details: {
@@ -265,9 +271,10 @@ export class RazorpayExecutionAdapter {
    */
   private handleEscalate(transaction: ObservableTransaction): ExecutionResult {
     return {
-      success: false,
       provider: 'razorpay',
       action: 'escalate',
+      attempted: false,
+      success: false,
       unsupported_action: true,
       status_message: `Application-level action — no direct Razorpay API operation exists for escalate on transaction ${transaction.transaction_id}.`,
       details: {

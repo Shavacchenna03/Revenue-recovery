@@ -304,9 +304,10 @@ export interface RecoveryOrchestrationResult {
 // ============================================================================
 
 export interface ExecutionResult {
-  success: boolean;
   provider: 'simulator' | 'razorpay';
   action: RecoveryAction;
+  attempted: boolean;
+  success: boolean;
   provider_reference_id?: string;
   status_message: string;
   details?: Record<string, any>;

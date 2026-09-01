@@ -27,9 +27,10 @@ export class SimulatorRecoveryExecutor implements RecoveryExecutor {
     const simResult = simulateRecovery(transaction, hidden, action);
 
     return {
-      success: simResult.recovered,
       provider: 'simulator',
       action,
+      attempted: true,
+      success: simResult.recovered,
       status_message: simResult.recovered
         ? `Simulated recovery succeeded for transaction ${transaction.transaction_id}.`
         : `Simulated recovery failed for transaction ${transaction.transaction_id}.`,

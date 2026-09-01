@@ -225,9 +225,10 @@ describe('Razorpay Adapter & Provider Execution Architecture (Day 6)', () => {
     const mockExecutorA = {
       providerName: 'razorpay' as const,
       execute: vi.fn().mockResolvedValue({
-        success: true,
         provider: 'razorpay' as const,
         action: 'retry_now' as RecoveryAction,
+        attempted: true,
+        success: true,
         provider_reference_id: 'plink_case_a',
         status_message: 'Executed retry_now via Payment Link',
       }),
@@ -257,9 +258,10 @@ describe('Razorpay Adapter & Provider Execution Architecture (Day 6)', () => {
     const mockExecutorB = {
       providerName: 'razorpay' as const,
       execute: vi.fn().mockResolvedValue({
-        success: false,
         provider: 'razorpay' as const,
         action: 'escalate' as RecoveryAction,
+        attempted: false,
+        success: false,
         unsupported_action: true,
         status_message: 'Application-level action — no direct Razorpay API operation exists for escalate',
       }),
